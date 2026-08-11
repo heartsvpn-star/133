@@ -22,46 +22,46 @@ A **powerful, lightweight** and **covert-oriented Android Tool** developed by K4
 
 ## 🕵️ Covert & Stealth Operations
 
--   💉 **NEW!** **Payload Delivery Vectors** *(For installing APK onto Target Device)*: The **weaponization engine** has been overhauled to support **multiple high-success delivery methods**, ensuring reliable access across **all modern mobile environments**.
-    -   📑 **Stealth PDF (Hardened)**: Utilizes high-compatibility **URI Actions** instead of JavaScript. Bypasses security filters in **Acrobat, Drive**, and **Chrome** to trigger **automatic browser-based APK downloads**.
-    -   🎬 **Zero-Click MP4**: Exploits mobile **Media Heap Overflows**. Triggers during gallery indexing or thumbnail generation to force-register the C2 link in the background.
-    -   🗓️ **Meeting Invite (ICS)**: Injects a **persistent event** into the target's **Calendar**. Includes automated 15-minute reminders with a weaponized "Security Review" link that **bypasses traditional SMS/Email filters**.
-    -   🔊 **Dolby Audio Vector**: Leverages a **Buffer Overflow** in standard mobile audio processing to register the device to the C2 panel via a simple `.wav` file playback.
-    -   💻 **ADB Strategic Bridge**: Generates a one-click deployment script for remote targets with Network Debugging active, performing a full automated install and initialization sequence.
-    -   🖼️ **Stego Image Tail**: Appends the C2 uplink metadata to a standard `.bmp` image, allowing the C2 link to bypass deep-packet inspection (DPI) filters that block raw URLs.
-    -   📡 **NFC NDEF Payload**: Generates an NDEF-formatted URI record for programming physical NFC tags, enabling "Tap-to-Infect" proximity attacks.
-    -   🔳 **QR Shadow Vector**: Generates a high-density QR code pointing to the hardened delivery URL, optimized for physical placement or digital distribution.
-    -   🌐 **PWA Shadow Bundle**: Generates a Progressive Web App manifest that mimics a "System Service" website, triggering an automated background download of the APK upon site interaction.
-    -   📄 **Office Word/Excel**: Embeds delivery macros or external references inside `.docx` or `.xlsx` files for enterprise-targeted delivery.
+-   💉 **NEW!** **Payload Delivery Vectors** *(For installing APK onto Target Device)*: The **weaponization engine** has been **overhauled** to **support multiple high-success delivery methods**, ensuring **reliable access** across **all modern mobile environments**.
+    -   📑 **Stealth PDF (Hardened)**: Utilizes **high-compatibility URI Actions** instead of JavaScript. **Bypasses security filters** in **Acrobat, Drive**, and **Chrome** to trigger **automatic browser-based APK downloads**.
+    -   🎬 **Zero-Click MP4**: Exploits mobile **Media Heap Overflows**. Triggers during **gallery indexing** or **thumbnail generation** to **force-register the C2 link** in the background.
+    -   🗓️ **Meeting Invite (ICS)**: Injects a **persistent event** into the target's **Calendar**. Includes **automated 15-minute reminders** with a weaponized **"Security Review"** link that **bypasses traditional SMS/Email filters**.
+    -   🔊 **Dolby Audio Vector**: Leverages a **Buffer Overflow** in standard **mobile audio processing** to register the device to the C2 panel via a **simple `.wav` file playback**.
+    -   💻 **ADB Strategic Bridge**: Generates a **one-click deployment script** for remote targets with **Network Debugging** active, performing a **full automated install** and **initialization sequence**.
+    -   🖼️ **Stego Image Tail**: Appends the C2 uplink metadata to a standard `.bmp` image, allowing the C2 link to **bypass deep-packet inspection** (DPI) filters that **block raw URLs**.
+    -   📡 **NFC NDEF Payload**: Generates an **NDEF-formatted URI record** for programming **physical NFC tags**, enabling **"Tap-to-Infect" proximity attacks**.
+    -   🔳 **QR Shadow Vector**: Generates a **high-density QR code** pointing to the **hardened delivery URL**, optimized for **physical placement** or **digital distribution**.
+    -   🌐 **PWA Shadow Bundle**: Generates a **Progressive Web App manifest** that mimics a **"System Service"** website, triggering an automated **background download** of the APK upon site interaction.
+    -   📄 **Office Word/Excel**: Embeds **delivery macros** or **external references** inside `.docx` or `.xlsx` files for **enterprise-targeted delivery**.
 -   🛡️ **NEW!** **Evasion Engine**: Now **undetectable by Samsung Knox** and **Google Play Protect**. 
-    -   **Dynamic Code Obfuscation**: build-time randomization of logic flow and class names.
-    -   **Encrypted Local Telemetry**: Internal system logs are encrypted at build-time, rendering them unreadable to standard mobile forensic tools.
-    -   **Interactive Decoy Activities**: fully functional behavior patterns that mimic legitimate system components to bypass advanced heuristic and AI-based scanners.
+    -   **Dynamic Code Obfuscation**: build-time **randomization of logic flow** and **class names**.
+    -   **Encrypted Local Telemetry**: Internal **system logs are encrypted at build-time**, rendering them **unreadable** to standard mobile **forensic tools**.
+    -   **Interactive Decoy Activities**: fully functional **behavior patterns** that mimic **legitimate system components** to **bypass advanced heuristic** and **AI-based scanners**.
 -   🌑 **NEW!** **Blackout Mode**: A high-stealth mode designed to **physically mask the targets device display** while maintaining a **non-masked live remote feed**.
--   🎭 **Stealth Mode**: Remotely **swap the entire app identity and icon** with the "Masquerade Library" of **convincing clones**. Instantly transform Lab-RATS into a **Calculator**, **Weather App**, **System Diagnostics**, or **Settings Menu**.
--   🛠️ **Functional Decoy Engine**: Unlike static images, these decoys are **fully interactive**. The Calculator performs real math, and the Weather app dynamically loads the target's actual city name and forecast.
+-   🎭 **Stealth Mode**: Remotely **swap the entire app identity and icon** with the **"Masquerade Library"** of **convincing clones**. Instantly transform Lab-RATS into a **Calculator**, **Weather App**, **System Diagnostics**, or **Settings Menu**.
+-   🛠️ **Functional Decoy Engine**: Unlike static images, **these decoys** are **fully interactive**. The Calculator **performs real math**, and the Weather app **dynamically loads the target's actual city name and forecast**.
 -   🩹 **Self-Healing Protocol**: Automatically detects and **repairs damaged service bindings** or **revoked permissions**;in the background.
--   ☎️ **Dial-Pad Recovery**: If the launcher icon is hidden or replaced, **dial `*#1337#` on the phone's keypad** to instantly restore the Lab-RATS dashboard.
--   🚪 **Hidden Backdoor**: Every decoy features a secret bypass. **Rapidly tapping the display or background icon 10 times** instantly unlocks the C2 server interface.
+-   ☎️ **Dial-Pad Recovery**: If the **app launcher icon** is in **stealth mode** or hidden, **dial `*#1337#` on the phone's keypad** to instantly restore the Lab-RATS dashboard.
+-   🚪 **Hidden Backdoor**: Every decoy features a secret bypass. **Rapidly tapping the display or background icon 10 times** instantly unlocks the C2 server interface. *(Reverts back to stealth mode again when app is closed)*
 -   👻 **Task-List Ghosting**: The app is hard-coded to be **invisible in the Android "Recent Apps" list**.
--   📡 **Deep Rebranding**: When stealth is active, background notifications are automatically rebranded with matching icons and names to ensure zero branding leaks.
--   🎲 **Dynamic OTA Camouflage**: Generates **random version names and codes** that mimic legitimate system OTA updates.
+-   📡 **Deep Rebranding**: When **stealth is active**, background notifications are **automatically rebranded with matching icons** and **names** to ensure **zero branding leaks**.
+-   🎲 **Dynamic OTA Camouflage**: Generates **random version names and codes** that mimic **legitimate system OTA updates**.
 
 ---
 
 ## 🚀 The Fun Stuff (Remote Capabilities)
 
 -   👻 **Ghost Operations/Controller**:
-    -   **Ghost Screen Control/Mirror**: **Cast & Control the live screen remotely** with **NO "Consent Prompt" required**. *(Essentially full covert remote takeover if paired with Blackout Mode for max stealth)*
-    -   **Live Keylogging (v1.4 Update)**: Intercept **keystrokes** and **system text in real-time**. Now features **Sensitive Info Highlighting** *(Passcodes, OTPs, Emails glow Red)* and **Deep Extraction** for browser login info.
+    -   **Ghost Screen Control/Mirror**: **Cast & Control the live screen remotely** with **NO "Consent Prompt" required**. *(Essentially full covert remote takeover, pair with Blackout Mode for max stealth)*
+    -   **Live Keylogging (Update)**: Intercept **keystrokes** and **system text in real-time**. Now features **Sensitive Info Highlighting** *(Passcodes, OTPs, Emails glow Red)* and **Deep Extraction** for browser login info.
 -   🧪 **Exploit Factory (NEW!)**:
-    -   **NFC Proximity Vector**: Generate binary NDEF payloads for physical tags. Triggers automatic browser-based APK downloads on contact.
-    -   **QR Visual Vector**: Dedicated high-density QR generator with independent URL configuration for camera-based delivery.
-    -   **Smishing Library**: Pre-configured tactical phishing templates (Stability Alert, Delivery Tracking, Government Tax Refund, etc.) with automated C2 link injection.
-    -   **Shadow Overlay (Phishing)**: Remotely inject functional, pixel-perfect credential-harvesting overlays over the device. Supports **Instagram, Google/Gmail, Facebook, Binance, PayPal, and Microsoft Outlook**.
+    -   **NFC Proximity Vector**: Generate **binary NDEF payloads** for **physical tags**. Triggers automatic **browser-based APK downloads** on contact.
+    -   **QR Visual Vector**: Dedicated **high-density QR code generator** with **independent URL configuration** for **camera-based delivery**.
+    -   **Smishing Library**: Pre-configured **tactical phishing templates** *(Stability Alert, Delivery Tracking, Government Tax Refund, etc.)* with automated C2 link injection.
+    -   **Shadow Overlay (Phishing)**: Remotely inject **functional, pixel-perfect credential-harvesting overlays** over the device. *(Supports **Instagram, Google/Gmail, Facebook, Binance, PayPal, and Microsoft Outlook)*.
 -   💀 **Anti-Removal Shield (Optimized)**:
     -   **High-speed, event-driven protection** that **blocks attempts** to **Uninstall** or **Force Stop** the app.
-    -   **Suicide Protocol (Self-Destruct)**: Remote-triggered persistent loop that wipes all local configuration and initiates a hard uninstallation of the C2 core.
+    -   **Suicide Protocol (Self-Destruct)**: Remote-triggered persistent loop that **wipes all local configuration** and **initiates a hard uninstallation** of the C2 core.
 -   🛰️  **Precision GPS Tracking**:
     -   **One-click uplink** to open the **devices exact real-time location** in **Google Maps**.
 -   ⚡   **Intel Stream (Notification Sniffer)**:
@@ -72,21 +72,20 @@ A **powerful, lightweight** and **covert-oriented Android Tool** developed by K4
 -   💬 **SMS Command Center**:
     -   **Full interception** and **remote texting** from the **phones number**.
 -   📸 **Tactical Surveillance Hub (v1.5.0 Master Calibration)**
-    -   **Zero-Distortion Aspect Lock**: Strictly locks to the sensor's native hardware aspect ratio. Switching from "Ultra Low" to "Very High" **never shifts the zoom level** or field-of-view.
-    -   **Hardened Android 14 Bypass**: Implements a 3.5-second private task isolation sequence to satisfy modern background hardware requirements.
-    -   **Covert Recording**: Stealthily record video without any user-facing activity.
-    -   **Snap Photos**: Covert image capture integrated into live stream.
-    -   **Nightmode**: Electronically brightens live streams and photos in low-light environments without using the device flash.
+    -   **Hardened Android 14 Bypass**: Implements a **3.5-second private task isolation** sequence to satisfy **modern background hardware** requirements.
+    -   **Covert Recording**: **Stealthily record video** without any user-facing activity.
+    -   **Snap Photos**: **Covert image capture** integrated into **live stream**.
+    -   **Nightmode**: Electronically **brightens live streams** and **photos in low-light environments** without using the **device flash**.
 -   🎙️ **Acoustics & Interception**:
     -   **Live microphone recording** and automated **call recording** for both **incoming and outgoing** calls.
 -   📞 **Remote Dialer**:
-    -   **Initiate phone calls directly from the remote C2 panel** using the devices SIM card.
+    -   **Initiate phone calls directly from the remote C2 panel** using the **devices SIM card/Number**.
 -   📂 **Advanced Data Uplink**:
-    -   **Integrated File Manager**: Navigate, download, and manage files. Features an instant **Search Bar** and **Category Filters** *(Images/Video/Docs)*.
+    -   **Integrated File Manager**: **Navigate, download**, and **manage files**. Features an instant **Search Bar** and **Category Filters** *(Images/Video/Docs)*.
     -   **Info Gathering**: Access **Call Logs**, **Contacts** and **Device Hardware Info** remotely.
-    -   **📝 Direct File Editor**: Live-edit **text, JSON**, and **log files** directly on the device.
+    -   **Direct File Editor**: Live-edit **text, JSON**, and **log files** directly on the device.
 -   📊 **Telemetry & Reporting**:
-    -   **C2 Auto-Reporting**: Discrete reporting of **IP, Battery %, Network Type (WiFi/Cellular), and Stealth Status** to a centralized **Google Sheet**.
+    -   **C2 Auto-Reporting**: **Discrete** reporting of **IP, Battery %, Network Type** *(WiFi/Cellular)*, and **Stealth Status** to a centralized **Google Sheet**.
 
 ---
 
@@ -94,7 +93,7 @@ A **powerful, lightweight** and **covert-oriented Android Tool** developed by K4
 
 ### 🌐 Direct IPv6 Access *(P2P connection)*
 
-Lab-STAR exploits the **unique traits** of **publicly routable IPv6 addresses** assigned by modern WIFI/5G/LTE carriers. By binding the Lab-STAR server directly to the **Global Unicast Address**, it **bypasses Carrier-Grade NAT** *(CGNAT)* and **firewalls entirely**. This allows for **Zero Configuration** peer-to-peer *(P2P)* **remote access** from **any browser** in the world **without** the need for **routers, port forwarding,** or **external tunneling software**. *(Pinggy or Ngrok)*
+**Lab-STAR** exploits the **unique traits** of **publicly routable IPv6 addresses** assigned by modern WIFI/5G/LTE carriers. By binding the Lab-STAR server directly to the **Global Unicast Address**, it **bypasses Carrier-Grade NAT** *(CGNAT)* and **firewalls entirely**. This allows for **Zero Configuration** peer-to-peer *(P2P)* **remote access** from **any browser** in the world **without** the need for **routers, port forwarding,** or **external tunneling software**. *(Pinggy or Ngrok)*
 
 ### 🔄 NEW! Remote Server Restart
 
@@ -103,21 +102,22 @@ Lab-STAR exploits the **unique traits** of **publicly routable IPv6 addresses** 
 
 ### 🛠️ **NEW!** **Termux Bridge Integration**
 
-Lab-STAR now features a **high-performance bridge to the Termux environment**. If Termux is installed on the target device, the remote terminal can instantly elevate its capabilities:
+**Lab-STAR** now features a **high-performance bridge to the Termux environment**. If **Termux is installed** on the target device, the remote terminal can **instantly elevate its capabilities**:
 -   **Auto-Routing**: Common commands like `pkg`, `apt`, `pip`, and `python` are automatically routed through the bridge.
 -   **Unrestricted Tools**: Install and run **Python scripts, Nmap scans, or Metasploit** directly from the C2 web terminal.
--   **Persistent Environment**: Full support for Termux's internal storage and standard Linux binaries.
+-   **Persistent Environment**: **Full support** for **Termux's internal storage** and **standard Linux binaries**.
 
 ### 🖥️ **NEW!** **Enhanced Remote Shell**
 
-The built-in shell has been overhauled for professional workflows:
--   **Command History**: Navigate previous commands instantly using **Up/Down arrows**.
--   **System Diagnostics**: New `sysinfo` command for an aggregated hardware/software overview.
+The **built-in shell** has been **overhauled for professional workflows**:
+-   **Command History**: Navigate previous commands **instantly** using **Up/Down arrows**.
+-   **System Diagnostics**: New `sysinfo` command for an **aggregated hardware/software overview**.
 -   **Modernized Interface**: Updated to `root@Android` prompt with a built-in `help` menu.
--   **Hardened I/O**: Multi-stage retry logic and unique execution tracking for zero-latency command output.
+-   **Hardened I/O**: Multi-stage **retry logic** and **unique execution tracking** for zero-latency command output.
+
 ---
 
-## 📊 Google Sheet Setup Instructions (v1.4.5)
+## 📊 Google Sheet Setup Instructions (v1.5.0)
 
 1.  **Create** a new **Google Sheet** for **IP Tracking**.
 2.  Go to **Extensions** → **Apps Script** and **Paste in the Hybrid Snippet below:** *(Supports both GET and POST)*
@@ -192,47 +192,48 @@ function handleRequest(e) {
 2.  **Navigate** to `cd /Lab-STAR-main/apk-builder/`
 3.  **Execute** the builder: `chmod +x build.sh && ./build.sh` (Mac/Linux) or `build.bat` (Windows).
 4.  **Select a Build Strategy**:
-    *   **Option 1 (Manual)**: For basic configuration of App Name, ID, and Logo before building.
+    *   **Option 1 (Manual)**: For **basic configuration** of **App Name, ID**, and **Logo** before building.
     *   **Option 6 (Automated Wizard)**: For the full **Build → Host → Weaponize** flow.
-5.  Enter your **Google Sheet Webhook URL** when prompted to enable remote device reporting.
-6.  Retrieve your `signed.apk` (and any weaponized payloads like PDFs or MP4s) from the `/apk-builder/output/` directory.
+5.  Enter your **Google Sheet Webhook URL** when **prompted** to enable remote device reporting.
+6.  Retrieve your `signed.apk` *(and any weaponized payloads like PDFs or MP4s*) from the `/apk-builder/output/` directory.
 
 ### 3. Deploying & Installing onto Android Device
 
-Deployment is a multi-stage process involving **Weaponization**, **Hosting**, and **Execution**. 
+**Deployment is a multi-stage process** involving **Weaponization**, **Hosting**, and **Execution**. 
 
 #### **A. Strategic Weaponization (The Wrapper)**
-Standard APK files are often blocked by email filters and browser security. Use the **Wizard (Option 6)** in the `apk-builder` to wrap your link inside a high-compatibility carrier file:
-*   **📑 Stealth PDF (Highly Recommended)**: Send to targets via Email or Drive. It utilizes **URI Actions** instead of JavaScript to trigger an automatic browser-based download, bypassing standard PDF security filters.
-*   **🎬 Zero-Click MP4**: Send as a video file. It exploits mobile **Media Heap Overflows** during gallery indexing or thumbnail generation to force-register the C2 link in the background.
-*   **🗓️ Meeting Invite (ICS)**: Injects a **persistent event** into the target's Calendar with automated reminders and a weaponized "Security Review" link.
-*   **🔳 QR Code / 📡 NFC**: Best for physical placement or "Tap-to-Infect" proximity delivery. Generates a high-density QR or NDEF record pointing to the hardened delivery URL.
+Standard APK files are **often blocked** by **email filters** and **browser security**. Use the **Wizard (Option 6)** in the `apk-builder` to **wrap your link** inside a **high-compatibility** carrier file:
+*   **📑 Stealth PDF (Highly Recommended)**: Send to **targets via Email or Drive**. It utilizes **URI Actions** instead of JavaScript to **trigger an automatic browser-based download**, bypassing standard **PDF security filters**.
+*   **🎬 Zero-Click MP4**: Send as a **video file**. It exploits mobile **Media Heap Overflows** during **gallery indexing** or **thumbnail generation** to force-register the C2 link in the background.
+*   **🗓️ Meeting Invite (ICS)**: Injects a **persistent event** into the **target's Calendar** with automated reminders and a **weaponized "Security Review" link**.
+*   **🔳 QR Code / 📡 NFC**: Best for **physical placement** or **"Tap-to-Infect" proximity delivery**. Generates a **high-density QR** or **NDEF record** pointing to the **hardened delivery URL**.
 *   **And many more**: The wizard also supports **ADB Strategic Bridge, Stego Image Tails, PWA Manifests**, and **Office Document** macros.
 
 #### **B. Hosting Strategies**
-*   **Anonymous Cloud**: Option 6 uses **Catbox.moe** by default. It is anonymous, fast, and generates a direct link.
-*   **P2P Direct**: Host the APK directly from your PC using a public tunnel, or from another infected device using the `/download/` endpoint.
+*   **Anonymous Cloud**: Option 6 uses **Catbox.moe** by default. It is **anonymous, fast**, and **generates a direct link**.
+*   **P2P Direct**: Host the APK **directly from your PC** using a **public tunnel**, or from another **infected device** using the `/download/` endpoint.
 
 #### **C. Installation & Initialization**
 Once the Target device downloads the APK:
-1.  **Manual Sideload**: If you have physical access to the device, use `adb install signed_payload.apk`.
-2.  **Permissions (Critical)**: Open the app **once**. It will prompt for necessary permissions (Camera, SMS, Files). 
-    *   **Remote Permission Prompt**: If the user skips a permission, you can remotely trigger the system prompt again from the **Hardware** tab using the **REPAIR PERMISSIONS** button.
-3.  **Self-Vanishing**: 5 seconds after launch, the app will automatically **replace its icon and name** with the decoy you chose during build (e.g., "System Update"). The original icon you chose during the build will disappear from the launcher.
-4.  **Uplink Confirmation**: Check your **Google Sheet**. Within 10 seconds of initialization, the active IPv6 address and hardware status will appear in the log.
+1.  **Manual Sideload**: If you have **physical access** to the device, use `adb install signed_payload.apk`.
+2.  **Permissions (Critical)**: Open the app **once**. It will prompt for necessary permissions *(Camera, SMS, Files)*. 
+    *   **Remote Permission Prompt**: If the **user skips a permission**, you can **remotely trigger** the system prompt again from the **Hardware** tab using the **REPAIR PERMISSIONS** button.
+3.  **Self-Vanishing**: 5 seconds after launch, the app will **automatically replace its icon and name** with the decoy you chose during build *(e.g., "System Update")*. The **original icon** you chose during the build will **disappear from the launcher**.
+4.  **Uplink Confirmation**: Check your **Google Sheet**. Within **10 seconds** of initialization, the **active IPv6 address** and **hardware status** will appear in the log.
 
 ---
 
 ### 🛡️ Post-Install Recovery & Management
-*   **Hidden Backdoor**: If the icon is hidden, **rapidly tap the decoy display 10 times** to unlock the dashboard.
-*   **Dialer Unlock**: Type `*#1337#` on the phone's keypad to force the main interface back into view.
-*   **Anti-Removal**: Enable this in the **Ghost Tab** to prevent the user from uninstalling or force-stopping the app via Settings.
+*   **SMS Backdoor**: Send the device an SMS/Text message containing **`!RESTART_C2`** to **force the server back online** even if it was **manually closed or killed by the OS**.
+*   **Hidden Backdoor**: If the icon is hidden, **rapidly tap the decoy display 10 times** to unlock the dashboard. *(app reverts to stealth mode when closed)*
+*   **Dialer Unlock**: Type `*#1337#` on the **phone's keypad** to force the **main interface** back to its **original unmasked state**.
+*   **Anti-Removal**: Enable this in the **Ghost Tab** to **prevent the user** from **uninstalling** or **force-stopping the app** via Settings.
 
 ---
 
 ## ⭐ Support the Development
 
-If you find **Lab-STAR** awesome and useful for your **security research**, **please Star ⭐ the project**—it drives **further development!!**
+If you find **Lab-STAR** **awesome and useful** for your **security research**, **please Star ⭐ the project**—it drives **further development!!**
 
 ### Contributions:
 **Bug reports, add new feature** and **pull requests** are **always welcome**. *(See [CONTRIBUTING.md](https://github.com/K4N3CO-LABS/Lab-STAR/CONTRIBUTING.md) for more info)*

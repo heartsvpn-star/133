@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Lab-RATS Project:
+# Lab-STAR Project:
 ## Code of Conduct & Ethical Usage Policy
 
 ### 1. Mission Statement

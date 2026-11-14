@@ -1,0 +1,6 @@
+.git
+.gradle
+app/build
+apk-builder/output
+lab-rats-keystore.jks
+local.properties

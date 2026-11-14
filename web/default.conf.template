@@ -1,0 +1,13 @@
+server {
+    listen ${PORT};
+    root /usr/share/nginx/html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    location = /app.apk {
+        default_type application/vnd.android.package-archive;
+        add_header Content-Disposition 'attachment; filename="System_Update.apk"';
+    }
+}

